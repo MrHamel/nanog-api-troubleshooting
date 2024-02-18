@@ -26,7 +26,7 @@ class Arista(Firmware, Hardware, L2, L3, Routing):
         elif len(ver_breakdown) == 3:
             fw = Device_SW_Ver(major=int(ver_breakdown[0]), minor=int(ver_breakdown[1]), build=ver_breakdown[3])
         elif len(ver_breakdown) == 4:
-            fw = Device_SW_Ver(major=int(ver_breakdown[0]), minor=int(ver_breakdown[1]), build=ver_breakdown[3], special=ver_breakdown[4])
+            fw = Device_SW_Ver(major=int(ver_breakdown[0]), minor=int(ver_breakdown[1]), build=ver_breakdown[2], special=ver_breakdown[3])
             
         cmd_style = "new"
         
