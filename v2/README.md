@@ -10,6 +10,13 @@ The `lib` folder contain utility classes with static methods that a main script 
 
 The implementation of the `Credentials` and `Log` are very customizable.
 
+## How do I get started?
+
+* Clone this repo
+* Create a virtual environment - `virtualenv v2/venv`
+* Install repos dependencies - `source v2/venv/bin/activate && pip install -r requirements.txt`
+* Run scripts from within the `v2` folder (see example.py script)
+
 ## Dependencies
 
 - [aioeapi](https://github.com/jeremyschulman/aio-eapi) - Arista vendor library
