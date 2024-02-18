@@ -19,6 +19,7 @@ The implementation of the `Credentials` and `Log` are very customizable.
 
 ## Dependencies
 
+- [aiodns](https://github.com/saghul/aiodns) - Async DNS lookups
 - [aioeapi](https://github.com/jeremyschulman/aio-eapi) - Arista vendor library
 - [aiosnmp](https://github.com/hh-h/aiosnmp) - Async SNMP querying
 - [asyncio](https://docs.python.org/3/library/asyncio.html) - Asynchronous functionality

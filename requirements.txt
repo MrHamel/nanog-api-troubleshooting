@@ -1,9 +1,11 @@
 aio-eapi==0.6.3
+aiodns==3.1.1
 aiosnmp==0.7.2
 annotated-types==0.6.0
 anyio==4.2.0
 black==23.9.1
 certifi==2024.2.2
+cffi==1.16.0
 click==8.1.7
 exceptiongroup==1.2.0
 flake8==6.1.0
@@ -23,7 +25,9 @@ pathspec==0.12.1
 pexpect==4.8.0
 platformdirs==4.2.0
 ptyprocess==0.7.0
+pycares==4.4.0
 pycodestyle==2.11.1
+pycparser==2.21
 pydantic==2.6.1
 pydantic_core==2.16.2
 pyeapi==1.0.2
