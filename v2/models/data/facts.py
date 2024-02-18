@@ -4,7 +4,7 @@ from typing import *
 class Device_SW_Ver(BaseModel):
     major: int = Field(gt=0)
     minor: int = Field(gt=0)
-    build: Optional[int] = Field(gt=0)
+    build: Optional[str]
     special: Optional[str]
 
 class Device_Facts(BaseModel):
