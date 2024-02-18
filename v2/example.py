@@ -2,6 +2,7 @@
 
 import asyncio
 from logging import Logger
+from pprint import pprint
 import uvloop
 
 from lib.arg_parser import Arg_Parser
@@ -13,9 +14,10 @@ from lib.log import Log
 async def task_thread(switch, cfg: dict, log: Logger):
     switch = await Device.get(switch, Credentials.get())
     
-    print(await switch.dev.cli("show version"))
-
-    pass
+    facts = await switch.get_facts()
+    
+    pprint(facts.__dict__)
+    pprint(facts.__repr__)
 
 async def main(switches):
     cfg: dict = Config.get()
