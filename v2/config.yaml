@@ -1,3 +1,7 @@
+# Config for V2
+
+# This config file is to contain well known static bits of information.
+
 # SNMP Communities
 snmp:
   ro: "test"

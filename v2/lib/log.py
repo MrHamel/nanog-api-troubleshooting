@@ -3,6 +3,14 @@ import logging
 import os
 
 class Log:
+    '''
+    The log class uses most of the same procedural code, however
+    it is broken down into various functions for scripts to call
+    as they please. All code that needs to log information needs
+    to import this class, store the output of Log.get(), then
+    use it in the same way as the original Python logger.
+    '''
+    
     log_full_name = None
     logger = None
     
@@ -35,6 +43,10 @@ class Log:
         if Log.logger:
             return Log.logger
         else:
+            '''
+            This is important for when logging has not been
+            started, it will start a generic log in /tmp.
+            '''
             Log.start("generic_program", "/tmp")
             return Log.logger
 

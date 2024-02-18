@@ -4,6 +4,12 @@ from pprint import pprint
 import sys
 
 class Arg_Parser:
+    '''
+    The arg parsing code is somewhat the same, except that I made the switches
+    argument append into a list by regardless if only a single device was
+    specified. I also parse the name of the script being called, to make
+    filling in the logger name very simple.
+    '''
     @staticmethod
     def parse_args():
         parser = argparse.ArgumentParser()
