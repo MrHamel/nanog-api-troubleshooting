@@ -18,13 +18,13 @@ class Device:
         async with aiosnmp.Snmp(host=hostname, port=161, community=cfg["snmp"]["ro"], retries=2, timeout=1) as snmp:
             try:
                 for res in await snmp.get(".1.3.6.1.2.1.1.1.0"):
-                    sysDescr: str = res.value
+                    sysDescr: str = res.value.decode("utf-8")
             except aiosnmp.exceptions.SnmpTimeoutError:
                 pass
 
             try:
                 for res in await snmp.get(".1.3.6.1.2.1.47.1.1.1.1.2.1"):
-                    entPhysicalDescr: str = res.value
+                    entPhysicalDescr: str = res.value.decode("utf-8")
             except aiosnmp.exceptions.SnmpTimeoutError:
                 pass
 
