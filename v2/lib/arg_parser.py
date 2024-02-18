@@ -10,6 +10,7 @@ class Arg_Parser:
     specified. I also parse the name of the script being called, to make
     filling in the logger name very simple.
     '''
+
     @staticmethod
     def parse_args():
         parser = argparse.ArgumentParser()
