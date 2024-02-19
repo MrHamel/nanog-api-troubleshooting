@@ -15,6 +15,7 @@ class Device_Facts(BaseModel):
     A store for basic information about a device.
     '''
     cmd_style: Optional[str]
+    hostname: str
     hw_rev: str
     mac_addr: str
     make: str

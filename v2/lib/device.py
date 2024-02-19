@@ -8,6 +8,7 @@ class UnknownDeviceTypeException(Exception):
     This exception is for signalling to upstream code that we failed to
     automatically identify a device via SNMP.
     '''
+
     pass
 
 class Device:
